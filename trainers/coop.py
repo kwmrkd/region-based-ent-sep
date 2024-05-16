@@ -4,6 +4,7 @@ import time
 import torchvision
 import torch.nn as nn
 from torch.nn import functional as F
+import torchvision.transforms.functional as TF
 from torch.cuda.amp import GradScaler, autocast
 import torchvision.transforms as transforms
 from torchvision.transforms import v2

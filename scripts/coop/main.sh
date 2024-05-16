@@ -1,17 +1,15 @@
 #!/bin/bash
 
 # custom config
-DATA=datasets
+DATA=../CoOp/datasets
 TRAINER=CoOp
 
-DATASET=$1
-CFG=$2  # config file
-CTP=$3  # class token position (end or middle)
-NCTX=$4  # number of context tokens
-SHOTS=$5  # number of shots (1, 2, 4, 8, 16)
-CSC=$6  # class-specific context (False or True)
-# Officehome
-
+DATASET=officehome
+CFG=vit_b16_ep50  # config file
+CTP=end  # class token position (end or middle)
+NCTX=4  # number of context tokens
+SHOTS=1  # number of shots (1, 2, 4, 8, 16)
+CSC=False  # class-specific context (False or True)
 LR=8e-5
 GRID=8
 K=90
